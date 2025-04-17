@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar with Back Button -->
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:title="Details"
+            android:titleTextColor="@android:color/white"
+            android:elevation="4dp"
+            app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- ScrollView for Content -->
+    <ScrollView
+        android:id="@+id/detailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/detailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Card Content -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#FAFAFA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvArtistName"
+                        style="@style/DetailTextStyle"
+                        android:text="Artist Name: " />
+
+                    <TextView
+                        android:id="@+id/tvAlbumTitle"
+                        style="@style/DetailTextStyle"
+                        android:text="Album Title: " />
+
+                    <TextView
+                        android:id="@+id/tvReleaseYear"
+                        style="@style/DetailTextStyle"
+                        android:text="Release Year: " />
+
+                    <TextView
+                        android:id="@+id/tvGenre"
+                        style="@style/DetailTextStyle"
+                        android:text="Genre: " />
+
+                    <TextView
+                        android:id="@+id/tvTrackCount"
+                        style="@style/DetailTextStyle"
+                        android:text="Track Count: " />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        style="@style/DetailTextStyle"
+                        android:text="Description: " />
+
+                    <TextView
+                        android:id="@+id/tvPopularTrack"
+                        style="@style/DetailTextStyle"
+                        android:text="Popular Track: " />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

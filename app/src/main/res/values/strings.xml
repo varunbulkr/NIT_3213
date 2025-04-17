@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NIT3213 Assignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="artist_Name">Artist Name</string>
+    <string name="album_Title">Add Item</string>
+    <string name="release_Year">Album Title</string>
+    <string name="item_genre">Genre</string>
+    <string name="track_Count">Track Count</string>
+    <string name="popular_Track">Popular Track</string>
+</resources>
